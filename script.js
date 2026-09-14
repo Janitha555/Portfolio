@@ -135,7 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* ============ 4. TYPING EFFECT ============ */
     const words = [
-        "Software Developer",
+        "Android Developer",
+        "UI/UX Designer",
         "ICT & Systems Specialist",
         "Rapid Tech Learner",
         "Software Error Fixer"
