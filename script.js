@@ -374,7 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const terminalBody = document.getElementById("terminalBody");
     const terminalLines = [
         { type: "cmd", text: "whoami" },
-        { type: "ok",  text: "→ Self-Taught Software Engineer | Sri Lanka" },
+        { type: "ok",  text: "→ Self-Taught Android Developer | Sri Lanka" },
         { type: "cmd", text: "cat journey.txt" },
         { type: "ok",  text: "→ NVQ-4 → YouTube 20K → Play Store Publisher" },
         { type: "cmd", text: "sudo fix --every-problem --alone" },
