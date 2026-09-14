@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora Creations | Advanced Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Preloader ===== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="loader-logo">NEXORA<span>.</span></div>
+            <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+            <div class="loader-percent" id="loaderPercent">0%</div>
+        </div>
+    </div>
+
+    <!-- ===== Custom Cursor ===== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ===== Scroll Progress Bar ===== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== Particle Canvas ===== -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- ===== Header ===== -->
+    <header id="header">
+        <nav class="navbar">
+            <a href="#about" class="logo" data-hover>NEXORA<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about-me" class="nav-link active" data-hover>About</a></li>
+                <li><a href="#skills" class="nav-link" data-hover>Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-hover>Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-hover>Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-hover>Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" data-hover title="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger" id="hamburger" data-hover>
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="about">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="hero-content">
+            <div class="badge reveal-up"><i class="fas fa-bolt"></i> Tech Adaptable &amp; Problem Solver</div>
+            <h1 class="reveal-up">Hi, I'm a<br><span class="typing-text"></span><span class="typing-cursor">|</span></h1>
+            <p class="reveal-up">Self-taught Software Engineer from Sri Lanka. Every bug, failed app, and setback I met — I fixed alone, through the internet and AI. From an NVQ-4 classroom to a 20K-subscriber YouTube channel to publishing live apps on the Play Store — I turn problems into products.</p>
+            <div class="cta-group reveal-up">
+                <a href="#projects" class="btn btn-primary magnetic" data-hover>Explore Works <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary magnetic" data-hover>Get In Touch</a>
+            </div>
+            <div class="terminal reveal-up" id="terminal">
+                <div class="terminal-header">
+                    <span class="t-dot red"></span>
+                    <span class="t-dot yellow"></span>
+                    <span class="t-dot green"></span>
+                    <span class="terminal-title">nexora@dev: ~</span>
+                </div>
+                <div class="terminal-body" id="terminalBody"></div>
+            </div>
+            <div class="social-links reveal-up">
+                <a href="https://www.linkedin.com/in/prasad-wickrama-arachchi-775231193" target="_blank" class="magnetic" data-hover title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.nexoracreations.rivomusic" target="_blank" class="magnetic" data-hover title="Rivo Music on Play Store">
+                    <img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=64" alt="Rivo Music" class="link-icon-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <i class="fab fa-google-play" style="display:none;"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rivo.official.music" target="_blank" class="magnetic" data-hover title="TikTok — Nexora"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/nexora_creations" target="_blank" class="magnetic" data-hover title="Instagram — Nexora"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/prasad_wickrama_arachchi" target="_blank" class="magnetic" data-hover title="Instagram — Personal"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== About / Profile Section ===== -->
+    <section id="about-me" class="about-section">
+        <div class="about-container">
+            <div class="about-image reveal-up">
+                <div class="image-frame tilt-card">
+                    <div class="card-glow"></div>
+                    <img src="profile.png" alt="Profile Photo">
+                </div>
+                <div class="image-badge"><i class="fas fa-circle"></i> Available for work</div>
+            </div>
+            <div class="about-text reveal-up">
+                <h2>About <span>Me</span></h2>
+                <p>My journey started with an NVQ-4 Software Development course — but the real education was self-taught. I learned Flutter alone, grew a YouTube channel editing music tracks in FL Studio to <strong>20,000 subscribers</strong>, and built my first Android app in Android Studio.</p>
+                <p>Not everything worked — my first Play Store app, K Lingo, failed and was removed. But every problem I met, I fixed alone through the internet and AI. That persistence led to Rivo Music, now <strong>live on the Play Store</strong> under Nexora Creations.</p>
+                <div class="about-highlights">
+                    <div class="highlight"><i class="fas fa-check-circle"></i> NVQ-4 Software Development</div>
+                    <div class="highlight"><i class="fas fa-check-circle"></i> 20K YouTube Subscribers</div>
+                    <div class="highlight"><i class="fas fa-check-circle"></i> Play Store Publisher</div>
+                    <div class="highlight"><i class="fas fa-check-circle"></i> Self-Taught Problem Solver</div>
+                </div>
+                <a href="#contact" class="btn btn-primary magnetic" data-hover>Work With Me <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Stats Counter ===== -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item reveal-up" data-hover>
+                <div class="stat-number" data-target="20">0</div>
+                <div class="stat-label">K YouTube Subscribers</div>
+            </div>
+            <div class="stat-item reveal-up" data-hover>
+                <div class="stat-number" data-target="3">0</div>
+                <div class="stat-label">Apps Published</div>
+            </div>
+            <div class="stat-item reveal-up" data-hover>
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Technologies Self-Learned</div>
+            </div>
+            <div class="stat-item reveal-up" data-hover>
+                <div class="stat-number" data-target="100">0</div>
+                <div class="stat-label">% Self-Taught</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Tech Marquee ===== -->
+    <div class="marquee-section">
+        <div class="marquee" id="marquee">
+            <div class="marquee-track">
+                <span><i class="fab fa-flutter"></i> Flutter</span>
+                <span><i class="fab fa-dart-lang"></i> Dart</span>
+                <span><i class="fab fa-firebase"></i> Firebase</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span><i class="fab fa-react"></i> React</span>
+                <span><i class="fab fa-node"></i> Node.js</span>
+                <span><i class="fab fa-git-alt"></i> Git</span>
+                <span><i class="fab fa-android"></i> Android</span>
+                <span><i class="fas fa-database"></i> SQL</span>
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-linux"></i> Linux</span>
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title reveal-up">Core <span>Competencies</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card tilt-card reveal-up" data-title="Rapid ICT Adaptability" data-desc="Proven ability to master any new ICT framework, tool, software ecosystem, or development environment within minimal timeframes.">
+                <div class="card-glow"></div>
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <h3>Rapid Tech Adaptability</h3>
+                <p>Fast learner capable of absorbing and mastering any new software, framework, or ICT tool on demand.</p>
+                
+                <div class="skill-bar"><div class="skill-fill" data-level="98"></div><span class="skill-pct">98%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-level="95"></div><span class="skill-pct">95%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-level="92"></div><span class="skill-pct">92%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-level="90"></div><span class="skill-pct">90%</span></div>
+                <div class="tag">System Mastery</div>
+            </div>
+            <div class="skill-card tilt-card reveal-up" data-title="Software & OS Error Diagnostics" data-desc="Expert in troubleshooting software installation bugs, dependency conflicts, environment path errors, and OS runtime failures across Windows, Linux, and Cloud instances.">
+                <div class="card-glow"></div>
+                <div class="skill-icon"><i class="fas fa-bug"></i></div>
+                <h3>Error Diagnosis &amp; Fixes</h3>
+                <p>Troubleshooting complex software installation, environment setup, and runtime errors efficiently.</p>
+                <div class="tag">Problem Solving</div>
+            </div>
+            <div class="skill-card tilt-card reveal-up" data-title="Mobile & Software Development" data-desc="Architecting mobile applications using Flutter and Dart, incorporating state management, audio playback controllers, and Cloud APIs.">
+                <div class="card-glow"></div>
+                <div class="skill-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                <h3>Software &amp; Mobile Dev</h3>
+                <p>Clean architecture development using Flutter, Dart, Firebase, and modern web tech stacks.</p>
+                <div class="tag">Development</div>
+            </div>
+            <div class="skill-card tilt-card reveal-up" data-title="Tools & Cloud Infrastructure" data-desc="Configuring and maintaining Git/GitHub workflows, VS Code environments, Firebase Cloud Hosting, and deployment pipelines.">
+                <div class="card-glow"></div>
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h3>Tools &amp; Cloud Ops</h3>
+                <p>Expert setup of Firebase Hosting, Git workflows, Android SDKs, and development environments.</p>
+                <div class="tag">Infrastructure</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title reveal-up">Featured <span>Creations</span></h2>
+        <div class="filter-buttons reveal-up">
+            <button class="filter-btn active" data-filter="all" data-hover>All</button>
+            <button class="filter-btn" data-filter="mobile" data-hover>Mobile Apps</button>
+            <button class="filter-btn" data-filter="web" data-hover>Web &amp; Systems</button>
+            <button class="filter-btn" data-filter="media" data-hover>Media</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1: Rivo Music (LIVE) -->
+            <div class="project-card tilt-card reveal-up" data-category="mobile" data-title="Rivo Music Player" data-desc="My flagship Flutter music player, live on the Google Play Store under Nexora Creations. Built with clean state management, offline audio controllers, and a real-time backend. A major update is rolling out soon with my own API for in-app downloads. Link: play.google.com/store/apps/details?id=com.nexoracreations.rivomusic" data-link="https://play.google.com/store/apps/details?id=com.nexoracreations.rivomusic">
+                <div class="card-glow"></div>
+                <div class="project-icon">
+                    <img src="https://www.google.com/s2/favicons?domain=play.google.com&sz=128" alt="Rivo Music Icon" class="app-card-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <i class="fas fa-music" style="display:none;"></i>
+                </div>
+                <div class="project-content">
+                    <span class="category-tag">Mobile App</span>
+                    <span class="live-badge"><i class="fas fa-circle"></i> Live on Play Store</span>
+                    <h3>Rivo Music Player</h3>
+                    <p>Flagship Flutter music player published on the Play Store. Next update brings my own download API.</p>
+                    <div class="tech-stack">
+                        <span>Flutter</span><span>Dart</span><span>Firebase</span>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.nexoracreations.rivomusic" target="_blank" class="project-link">View on Play Store <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 2: AuralPix (LIVE) -->
+            <div class="project-card tilt-card reveal-up" data-category="mobile" data-title="AuralPix — Social Media Downloader" data-desc="My very first Android app, built in Android Studio — a social media downloader that is still live on APKPure today. I'm now rebuilding it from scratch with my own API so users can search and download everything inside the app itself. Link: apkpure.com/auralpix/com.prasad.auralpix" data-link="https://apkpure.com/auralpix/com.prasad.auralpix">
+                <div class="card-glow"></div>
+                <div class="project-icon">
+                    <img src="https://www.google.com/s2/favicons?domain=apkpure.com&sz=128" alt="AuralPix Icon" class="app-card-icon" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <i class="fas fa-download" style="display:none;"></i>
+                </div>
+                <div class="project-content">
+                    <span class="category-tag">Mobile App</span>
+                    <span class="live-badge"><i class="fas fa-circle"></i> Live on APKPure</span>
+                    <h3>AuralPix Downloader</h3>
+                    <p>First-ever app, built in Android Studio. Now being rebuilt with my own API for in-app downloads.</p>
+                    <div class="tech-stack">
+                        <span>Android</span><span>Java</span><span>Custom API</span>
+                    </div>
+                    <a href="https://apkpure.com/auralpix/com.prasad.auralpix" target="_blank" class="project-link">View on APKPure <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 3: K Lingo (LESSON) -->
+            <div class="project-card tilt-card reveal-up" data-category="mobile" data-title="K Lingo — Korean Learning App" data-desc="My first Play Console release — a Korean language learning app. It didn't get proper downloads, so I studied why, stopped updating it, and it was removed from the Play Store. It taught me more about product-market fit than any success could have.">
+                <div class="card-glow"></div>
+                <div class="project-icon"><i class="fas fa-language"></i></div>
+                <div class="project-content">
+                    <span class="category-tag">Mobile App</span>
+                    <span class="lesson-badge"><i class="fas fa-graduation-cap"></i> Lesson Learned</span>
+                    <h3>K Lingo</h3>
+                    <p>First Play Store launch. It failed — and taught me everything about building what people actually want.</p>
+                    <div class="tech-stack">
+                        <span>Flutter</span><span>Firebase</span><span>Play Console</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: YouTube Channel (MEDIA) -->
+            <div class="project-card tilt-card reveal-up" data-category="media" data-title="Music Track Edit Channel — 20K Subscribers" data-desc="Before apps, there was music. I edited song tracks in FL Studio and grew a YouTube channel to 20,000 subscribers. The channel was eventually terminated — but the skills in audio production, content creation, and consistency live on in everything I build.">
+                <div class="card-glow"></div>
+                <div class="project-icon"><i class="fab fa-youtube"></i></div>
+                <div class="project-content">
+                    <span class="category-tag">Media &amp; Audio</span>
+                    <span class="live-badge youtube"><i class="fas fa-fire"></i> 20K Subscribers</span>
+                    <h3>FL Studio Music Channel</h3>
+                    <p>Edited tracks in FL Studio, grew to 20K subs. The channel ended — the creator mindset didn't.</p>
+                    <div class="tech-stack">
+                        <span>FL Studio</span><span>Audio Editing</span><span>YouTube</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Nexora Web -->
+            <div class="project-card tilt-card reveal-up" data-category="web" data-title="Nexora Web Ecosystem" data-desc="This very portfolio — a single-page web infrastructure with particle physics, glassmorphism UI, dark/light themes, and the full Nexora Creations brand experience.">
+                <div class="card-glow"></div>
+                <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-content">
+                    <span class="category-tag">Web &amp; Systems</span>
+                    <h3>Nexora Web Infrastructure</h3>
+                    <p>The site you're viewing — particles, glassmorphism, themes, and pure hand-written code.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span><span>HTML5/CSS3</span><span>Canvas API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Modal ===== -->
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close-modal" data-hover>&times;</span>
+            <h2 id="modalTitle">Details</h2>
+            <p id="modalDesc">Detailed description...</p>
+            <a href="#" id="modalLink" class="btn btn-primary modal-link" target="_blank" style="display:none">Open Link <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+
+    <!-- ===== Experience Timeline ===== -->
+    <section id="experience" class="timeline-section">
+        <h2 class="section-title reveal-up">My <span>Journey</span></h2>
+        <div class="timeline">
+            <div class="timeline-item reveal-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card">
+                    <div class="card-glow"></div>
+                    <span class="timeline-date">The Beginning</span>
+                    <h3>NVQ-4 Software Development</h3>
+                    <p>Started my formal ICT education with an NVQ-4 Software Development course — the foundation that sparked everything that followed.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card">
+                    <div class="card-glow"></div>
+                    <span class="timeline-date">Self-Taught Era</span>
+                    <h3>Flutter, Alone</h3>
+                    <p>Mastered Flutter completely on my own — no mentor, no course. Every error fixed through the internet and AI. This is where I became a real problem solver.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card">
+                    <div class="card-glow"></div>
+                    <span class="timeline-date">Media Chapter</span>
+                    <h3>YouTube — 20K Subscribers</h3>
+                    <p>Edited song tracks in FL Studio and grew a YouTube channel to 20,000 subscribers. The channel was eventually terminated — but the discipline and creativity stayed.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card">
+                    <div class="card-glow"></div>
+                    <span class="timeline-date">First Launch</span>
+                    <h3>AuralPix &amp; K Lingo</h3>
+                    <p>Built my first app, AuralPix, in Android Studio — still live on APKPure. Then launched K Lingo on the Play Store. It didn't succeed, so I studied why, and removed it. Failure became my best teacher.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-up">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card">
+                    <div class="card-glow"></div>
+                    <span class="timeline-date">Present</span>
+                    <h3>Rivo Music — Live on Play Store</h3>
+                    <p>Released Rivo Music under Nexora Creations — now live on the Google Play Store. A major update with my own download API is rolling out soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Philosophy Quote ===== -->
+    <section class="quote-section">
+        <div class="quote-card reveal-up tilt-card">
+            <div class="card-glow"></div>
+            <i class="fas fa-quote-left quote-mark"></i>
+            <p class="quote-text">Every problem I met on this journey, I fixed <span>alone</span> — through the internet and AI. That's not a limitation. That's my <span>superpower</span>.</p>
+            <div class="quote-author">— Prasad Wickrama Arachchi, Founder of Nexora Creations</div>
+        </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title reveal-up">Let's <span>Connect</span></h2>
+        <div class="contact-socials reveal-up">
+            <a href="https://www.linkedin.com/in/prasad-wickrama-arachchi-775231193" target="_blank" data-hover title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.tiktok.com/@rivo.official.music" target="_blank" data-hover title="TikTok — Nexora"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@prasad.wickramaar" target="_blank" data-hover title="TikTok — Personal"><i class="fas fa-user"></i></a>
+            <a href="https://www.instagram.com/prasad_wickrama_arachchi" target="_blank" data-hover title="Instagram — Personal"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/nexora_creations" target="_blank" data-hover title="Instagram — Nexora"><i class="fas fa-rocket"></i></a>
+            <a href="https://play.google.com/store/apps/details?id=com.nexoracreations.rivomusic" target="_blank" data-hover title="Rivo Music"><i class="fab fa-google-play"></i></a>
+        </div>
+        <div class="contact-card tilt-card reveal-up">
+            <div class="card-glow"></div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block magnetic" data-hover>Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== Back to top ===== -->
+    <button class="back-to-top" id="backToTop" data-hover><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <p>&copy; 2026 Nexora Creations. Driven by Rapid Learning &amp; System Precision.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
